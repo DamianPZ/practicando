@@ -67,6 +67,7 @@ boton.onclick = function(){
     let numero;
     numero= Math.PI;
     console.log(numero);
-
     
-   
+     console.log(Math.abs(numero));
+    
+     console.log(Math.ceil(numero));
