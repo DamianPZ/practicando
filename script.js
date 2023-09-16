@@ -71,3 +71,18 @@ boton.onclick = function(){
      console.log(Math.abs(numero));
     
      console.log(Math.ceil(numero));
+
+     console.log(Math.exp(2));
+
+     console.log(Math.pow(2,5));
+
+     console.log(Math.random());
+
+    let frutas = ["pera","manzana","sandia"];
+
+    frutas [3] = "uva";
+    console.log(frutas);
+    frutas.push("durazno","melon","anana");
+    for (const fruta of frutas) {
+        console.log(fruta);
+    }
