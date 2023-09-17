@@ -2,7 +2,7 @@
 
 
 let bd = document.getElementById("body");
-Window.onclick= bd.style.color = "blue";
+Window.onclick= bd.style.color = "black";
 let suma = ( a , b ) => a + b;
 
 console.log(suma( 456, 485));
@@ -46,10 +46,14 @@ let pes = document.getElementById("p");
 let opt = document.getElementsByClassName("opcion");
 let boton = document.getElementById("btn");
 
+
 boton.onclick = function(){
     bd.style.color = "red";
-   
-   
+    bd.style.background="black";
+    bd.style.transition= "0.5s";
+   boton.style.background="red";
+   boton.style.color="white";
+    
     };
     pes.onmouseover = function(){
        
@@ -86,3 +90,29 @@ boton.onclick = function(){
     for (const fruta of frutas) {
         console.log(fruta);
     }
+    
+    let frase = "pepe junior mariela paja puta pedra pirulo";
+
+    nombres = frase.split(null);
+
+    for (let name of nombres) {
+        console.log(`hola mi nombre es ${name}`);
+    }
+    function ordenar(a , b){
+        if(a > b) return 1 ;
+        if(a == b) return 0;
+        if(a < b ) return -1;
+    }
+
+    let arr = [1, 15 , 3 , 4 , 3 , 2 , 8 , 7 , 9 , 45 , 25 , 36 , 14];
+    console.log(arr.sort(ordenar));
+
+    let duplicados = arr.map(function(elemento){
+        return elemento * 2;
+    })
+
+    console.log(duplicados);
+    let mitad = arr.map(function(elemento){
+        return elemento/2;
+    })
+    console.log(mitad);
